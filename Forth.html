@@ -30,17 +30,24 @@
         top: -60px;
     }
 
-    /* .form {
+    /* form {
         display: flex;
         justify-content: center;
         align-items: center;
         color: darkgoldenrod;
     }*/
+    #Date {
+        position: absolute;
+        right: 1%;
+        color: yellow;
+        top: 2%;
+    }
 </style>
 
 <body background="https://live.staticflickr.com/4206/35041679974_407efb42e7_b.jpg">
     <h1>Welcome to this Page</h1>
     <a id="a" href="Second.html">Back</a>
+    <div id="Date"></div>
     <br>
     <br>
     <br>
@@ -57,7 +64,7 @@
             <input type="text" id="phoneno" name="phoneno" placeholder="phoneno" required><br><br>
             <label for="Email">Email</label>
             <input type="email" id="Email" name="Email" placeholder="Email Address" required><br><br>
-            <input type="text" id="abc"><br><br>
+            <input type="text" id="abc" required><br><br>
             <button id="speak">Speak</button><br><br>
             Gender
             <input type="radio" id="Male" name="Gender" id="male">
@@ -82,6 +89,8 @@
             const a = new SpeechSynthesisUtterance(abc.value);
             speechSynthesis.speak(a);
         }
+        const d = new Date();
+        document.getElementById("Date").innerHTML = d;
     </script>
 </body>
 

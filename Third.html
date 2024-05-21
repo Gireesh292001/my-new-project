@@ -19,20 +19,31 @@
 
     #a {
         position: relative;
-
         color: white;
         text-decoration: none;
         top: -70px;
 
     }
+
+    #Date {
+        position: absolute;
+        right: 1%;
+        top: 2%;
+        color: white;
+    }
 </style>
 
 <body
-    background="https://images.newindianexpress.com/uploads/user/imagelibrary/2020/2/15/w900X450/Karnataka_Assembly_EPS.jpg?w=400&dpr=2.6">
+    background="https://images.deccanherald.com/deccanherald%2Fimport%2Fsites%2Fdh%2Ffiles%2Farticleimages%2F2023%2F04%2F27%2Fpti02142022000256b-1-1213265-1682575271.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop">
     <h1>Welcome Back</h1>
     <a id="a" href="Second.html">
         <h3>Back</h3>
     </a>
+    <div id="Date"></div>
 </body>
+<script>
+    const d = new Date();
+    document.getElementById("Date").innerHTML = d;
+</script>
 
 </html>

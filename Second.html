@@ -32,20 +32,34 @@
 
     #a {
         color: black;
-        position: relative;
-        left: 1240px;
+        position: absolute;
+        right: 1%;
         text-decoration: none;
+        top: 5%;
+    }
+
+    #d:hover {
+        text-decoration-line: underline;
+
+    }
+
+    #Date {
+        position: absolute;
+        right: 1%;
+        top: 1.5%;
+        color: orangered
     }
 </style>
 
 <body background="https://images.news9live.com/wp-content/uploads/2023/09/arif-khan-qI97C620KMg-unsplash-scaled.jpg">
-    <i class="fa-solid fa-bars"></i> <span>
+    <i class="fa-solid fa-bars"></i> <span id="d">
         Home
-    </span><span>New</span>
-    <span>Info</span>
-    <span>Menu</span>
+    </span><span id="d">New</span>
+    <span id="d">Info</span>
+    <span id="d">Menu</span>
 
     <a id="a" href="index.html">Back</a>
+    <div id="Date"></div>
 
     <br>
     <br>
@@ -63,10 +77,13 @@
         <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp fb"></i></a>
 
         <h3>New Users</h3>
-        <a href="Forth.html"><button type="button">Register Now</button></a>
-
+        <a href="Forth.html"><button type="button">Register Now</button></a><br>
     </form>
 
 </body>
+<script>
+    const d = new Date();
+    document.getElementById("Date").innerHTML = d;
+</script>
 
 </html>

@@ -26,13 +26,25 @@
         right: 740px;
         top: -100px;
     }
+
+    #Date {
+        position: absolute;
+        color: orangered;
+        right: 1%;
+        top: 2%;
+    }
 </style>
 
 <body
-    background="https://media.licdn.com/dms/image/C5112AQHKX54ahMsdQg/article-inline_image-shrink_1000_1488/0/1520168925907?e=1705536000&v=beta&t=t6hb0MQFHo0jm1IgInHbCx3a7UKNxCmzlo0Qv3jKuKQ">
+    background="https://media.licdn.com/dms/image/C5112AQHKX54ahMsdQg/article-inline_image-shrink_1000_1488/0/1520168925907?e=1721865600&v=beta&t=Ae262NI29oT0IQZ9hcAJCodWYJsO_bxc0Si_mbfvdic">
     <h1>Your Registration Is Completed</h1>
     <a href="Second.html"><button type="button">Login</button></a><br><br>
     <a id="a" href="Forth.html">Back</a>
+    <div id="Date"></div>
 </body>
+<script>
+    const d = new Date();
+    document.getElementById("Date").innerHTML = d;
+</script>
 
 </html>
